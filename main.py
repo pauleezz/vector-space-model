@@ -38,7 +38,7 @@ def main(query):
   #Relevance Feedback
 
   #get the document of the first score of the tfidf + cosine similarity by given query
-  indx_fb = indexList.index(top10_tfidf_cos[0][0])
+  indx_fb = indexList.index(top5_tfidf_cos[0][0])
   fb = documents[indx_fb]
 
   #the new query term weighting scheme is [1 * original query + 0.5 * feedback query]
@@ -58,7 +58,7 @@ def main(query):
   print_top(top5_rf_tfidf_cos)
 
 
-def print_top(top_10):
+def print_top(top_5):
   print('DocID         Score')
   for each in top_5:
     print('{}    {}'.format(each[0], each[1]))

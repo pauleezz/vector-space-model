@@ -19,6 +19,7 @@ After entering the query, it will output five different combinations which retri
 5. Relevance Feedback + TF-IDF Weighting + Cosine Similarity
 
 The output would be:
+![](https://i.imgur.com/CXnOUmB.png)
 
 ## File Structure
 
